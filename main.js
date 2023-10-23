@@ -36,4 +36,7 @@ function validarFormulario(){
     }
 }
 
-
+function obtenerImc (peso, altura){
+    let imc = peso / (altura * altura)
+    return imc 
+}
