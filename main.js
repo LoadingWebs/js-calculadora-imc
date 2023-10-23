@@ -28,12 +28,12 @@ function validarFormulario(){
     }else{
         mostrarResultado("")
     }
-   /* if( altura.value == ""){
+    if( altura.value == ""){
         mostrarResultado("debe completar el campo altura")
         return false
     }else{
         mostrarResultado("")
-    }*/
+    }
 }
 
 
