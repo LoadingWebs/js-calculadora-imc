@@ -40,3 +40,16 @@ function obtenerImc (peso, altura){
     let imc = peso / (altura * altura)
     return imc 
 }
+
+
+function obtenerEstadoDeSalud(imc){
+    if(imc < 18.5){
+        return "Peso inferior al normal"
+    }else if (imc >= 18.5 && imc <= 24.9){
+        return "Peso normal"
+    }else if (imc >= 25 && imc <= 29.9){
+        return "Peso superior al normal"
+        }else{
+            return "obeso"
+        }
+ }
