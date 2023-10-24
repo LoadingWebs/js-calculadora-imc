@@ -4,9 +4,14 @@ function mostrarResultado(texto){
 }
 
 function calcularIMC(){
-    if(!validarFormulario()){
+    /* if(!validarFormulario()){
         return false;
-    }
+    } */
+    let peso= document.getElementById("Peso").value
+    let altura= document.getElementById("Altura").value
+    let IMC = obtenerImc(peso, altura)
+    let salud = obtenerEstadoDeSalud (IMC)
+    mostrarResultado (salud); 
 
     
 }
